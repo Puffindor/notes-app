@@ -1,0 +1,150 @@
+.auth-container {
+  background: $dark;
+  height: 85vh;
+
+  .auth-main {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    color: $white;
+    padding: 0 160px;
+    height: 100%;
+
+    .auth-text {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 50%;
+    }
+
+    h3 {
+      color: $gray;
+      font-weight: 400;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+  .login-modal {
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0px 60px 60px 60px ;
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        transition: 100ms;
+
+        &:hover {
+          color: $white;
+          transition: 100ms;
+        }
+      }
+
+      p {
+        color: $gray
+      }
+    }
+  }
+
+@media screen and (max-width: 1366px) {
+  
+  .auth-container { 
+    .auth-header {
+      padding: 23px 80px;
+    }
+
+    .auth-main {
+      padding: 0 80px;
+    }
+  }
+
+  .login-modal {
+    padding: 0px 36px 36px 36px ;
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .auth-container { 
+    .auth-header {
+      padding: 20px 40px;
+    }
+
+    .auth-main {
+      padding: 0 40px;
+      flex-direction: column;
+
+      .auth-text {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .auth-container { 
+    .auth-header {
+      padding: 20px 40px;
+    }
+
+    .auth-main {
+      padding: 0 40px;
+      flex-direction: column;
+
+      .auth-text {
+        h1 {
+          font-size: 60px;
+        }
+        
+        h3 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .login-modal {
+    padding: 0;
+    gap: 28px;
+    margin-top: 22px;
+
+    .buttons {
+      flex-direction: column;
+      gap: 12px;
+
+      p {
+        font-size: 14px;
+      }
+
+      .base-btn {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  .modal-error {
+    margin-top: 24px;
+  }
+}

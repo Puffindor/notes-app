@@ -1,0 +1,43 @@
+.note-item {
+  background: $green-light;
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  position: relative;
+  word-break: break-word;
+
+  p {
+    padding: 0px 28px;
+  }
+
+  .note-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0 8px 0;
+
+    .note-delete {
+      align-items: center; 
+      display: flex;
+      gap: 12px
+    }
+  }
+
+  .note-title-container {
+    padding: 20px 28px;
+    border-bottom: 2px solid $green;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: 8px;
+    right: -2px;
+    top: -2px;
+    background: transparent;
+    border-top: 40px solid $dark;
+    border-left: 40px solid $green;
+    
+  }
+}

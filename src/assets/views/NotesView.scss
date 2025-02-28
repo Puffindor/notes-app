@@ -1,0 +1,101 @@
+.notes-view {
+  background: $dark;
+  padding: 40px 160px;
+  position: relative;
+  min-height: 85vh;
+
+  h4 {
+    word-break: break-word;
+  }
+ 
+  .add-button {
+    position: absolute;
+    bottom: 40px;
+    right: 12px;
+    box-shadow: 0px 15px 46px -10px #00000099;
+    z-index: 99;
+    border-radius: 32px;
+  }
+
+  .notes-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+  .add-modal {
+    padding: 0 60px 80px 60px;
+
+    .add-button {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    .title-input {
+      margin-bottom: 24px;
+    }
+
+    .add-textarea {
+      margin-bottom: 40px;
+    }
+  }
+@media screen and (max-width: 1366px) {
+
+  .notes-view {
+    padding: 40px 80px;
+  }
+
+  .add-modal {
+    padding: 0 36px 36px 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .notes-view {
+    padding: 40px 40px;
+    .notes-list {
+      display: grid;
+      grid-template-columns:1fr;
+
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .notes-view {
+    padding: 40px 20px;
+  }
+  
+  .add-modal {
+    padding: 0;
+
+    .add-button {
+      .base-btn {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 28px;
+    }
+
+    .title-input {
+      margin-bottom: 16px;
+    }
+
+    .add-textarea {
+      margin-bottom: 28px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.auth-header {
+  display: flex;
+  align-items: center;
+  padding: 40px 160px;
+  justify-content: space-between;
+  gap: 22px;
+  background: $dark;
+
+  .login-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-user {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .logout-tooltip {
+    font-size: 18px;
+    top: 72px;
+    right: -44px;
+    position: absolute;
+    background: $dark-middle;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    z-index: 120;
+
+    span {
+      transition: 100ms;
+
+      &:hover {
+        color: $white;
+        transition: 100ms
+      }
+    }
+
+    svg {
+      position: absolute;
+      top: -8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .auth-header {
+    padding: 20px 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .auth-header {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .auth-header {
+    padding: 20px 20px;
+  }
+}

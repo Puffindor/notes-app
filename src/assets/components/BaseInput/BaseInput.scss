@@ -1,0 +1,50 @@
+.base-input {
+  label {
+    color: $gray;
+    margin: 0 0 8px 20px;
+    display: block;
+  }
+
+  .input {
+    border-radius: 36px;
+    background: $white;
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      border: 2px solid $green-light;
+      padding: 20px 26px;
+    }
+
+    svg {
+      cursor: pointer;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 18px;
+    }
+  }
+
+    .length {
+    width: 100%;
+    color: $gray;
+    display: block;
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 24px;
+
+    .error {
+      color: $error-text
+    }
+
+    &.hasError {
+      justify-content: space-between;
+    }
+  }
+}

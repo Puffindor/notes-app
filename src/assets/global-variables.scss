@@ -1,0 +1,27 @@
+@mixin h1 {
+  font-size: 104px;
+  font-weight: 900;
+}
+
+@mixin h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+@mixin h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+@mixin h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@mixin p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+

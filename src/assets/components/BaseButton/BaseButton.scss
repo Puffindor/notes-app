@@ -1,0 +1,43 @@
+.base-btn {
+  padding:  12px 24px;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  background-color: $green-light;
+  color: $white;
+  transition: 200ms;
+  font-size: 20px;
+
+  &._icon-only {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &._flat {
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  &._close {
+    padding: 20px;
+  }
+
+  &:hover {
+    background: $green-middle;
+  }
+
+  &:active {
+    background: $green-dark;
+  }
+
+  &:disabled {
+    background: $gray;
+  }
+}
