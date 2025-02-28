@@ -96,6 +96,7 @@ export const useAuthStore = defineStore('authStore', {
           this.setToken(data.accessToken)
           this.isUserAuth = true
           this.email = payload.email
+          errorStore.clearError()
         })
       } catch (e: any) {
         errorStore.checkError(e)
